@@ -1,4 +1,4 @@
-public class atmMachine {
+public class Tester {
 	public static void main(String[] args) {
 		User jl = new User("Justin Lewis", 1234, 555-55-5555, "123 Address Lane", 1234567890);
 		Account account = new Account(500, 123456789, jl);
