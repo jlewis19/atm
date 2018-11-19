@@ -19,7 +19,7 @@ public class ATM {
 		System.out.print("    PIN # : ");
 		int pinInput = in.nextInt();
 		if (pinInput == this.account.getUser().getPin() && accountInput == this.account.getAccountNum()) {
-			System.out.println("\nWelcome, " + account.getUser().getName() + "! What can I help you with?\n");
+			System.out.println("\nWelcome, " + this.account.getUser().getName() + "! What can I help you with?\n");
 			return true;
 		} else {
 			return false;

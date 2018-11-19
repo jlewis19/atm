@@ -1,3 +1,5 @@
+import java.util.concurrent.ThreadLocalRandom;
+
 public class Account {
 	private double balance;
 	private int accountNum;
@@ -23,5 +25,10 @@ public class Account {
 	
 	public void setBalance(double balance) {
 		this.balance = balance;
+	}
+	
+	public int randomAccountNum() {
+		int randomNum = ThreadLocalRandom.current().nextInt(100000000, 1000000000);
+		return randomNum;
 	}
 }

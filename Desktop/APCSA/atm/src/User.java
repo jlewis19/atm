@@ -1,11 +1,11 @@
 public class User {
 	private String name;
 	private int pin;
-	private int ssn;
+	private long ssn;
 	private String address;
-	private int phoneNum;
+	private long phoneNum;
 	
-	public User(String name, int pin, int ssn, String address, int phoneNum) {
+	public User(String name, int pin, long ssn, String address, long phoneNum) {
 		this.name = name;
 		this.pin = pin;
 		this.ssn = ssn;
@@ -21,7 +21,7 @@ public class User {
 		return this.pin;
 	}
 	
-	public int getSsn() {
+	public long getSsn() {
 		return this.ssn;
 	}
 	
@@ -29,7 +29,7 @@ public class User {
 		return this.address;
 	}
 	
-	public int getPhoneNum() {
+	public long getPhoneNum() {
 		return this.phoneNum;
 	}
 }
